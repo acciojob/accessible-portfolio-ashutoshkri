@@ -8,6 +8,50 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<header>
+  <h1 role="heading" aria-level="1">Accessible Portfolio</h1>
+</header>
+
+<nav role="navigation" aria-label="Primary">
+  <ul role="list" class="nav-list">
+    <li role="listitem"><a href="#about">About</a></li>
+    <li role="listitem"><a href="#work">Work</a></li>
+    <li role="listitem"><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="about">
+  <figure class="banner">
+    <img
+      role="img"
+      src="https://via.placeholder.com/960x280?text=Portfolio+Banner"
+      alt="Developer workspace banner: laptop with code on screen"
+    />
+    <figcaption class="sr-only">Portfolio banner image</figcaption>
+  </figure>
+
+  <section aria-labelledby="intro-title">
+    <h2 id="intro-title">Brief Description</h2>
+    <p>
+      Hi! I’m Ashutosh, a MERN-stack developer focused on writing semantic,
+      accessible, and responsive UIs.
+    </p>
+  </section>
+
+  <section aria-labelledby="skills-title">
+    <h2 id="skills-title">Key Skills</h2>
+    <ul role="list">
+      <li role="listitem">HTML5 Semantic Layout</li>
+      <li role="listitem">CSS Flexbox & Grid</li>
+      <li role="listitem">JavaScript (ES6+)</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Ashutosh • All rights reserved</p>
+</footer>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
